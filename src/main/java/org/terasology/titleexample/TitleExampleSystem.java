@@ -44,7 +44,7 @@ public class TitleExampleSystem extends BaseComponentSystem {
     private Title title;
 
     @Override
-    public void postBegin() {
+    public void postBegin() { // Fires before the first frame of the game
         // Schedule an action after 1 second from now
         delayManager.addDelayedAction(localPlayer.getCharacterEntity(), DELAY_ACTION_ID, 1000L);
     }
