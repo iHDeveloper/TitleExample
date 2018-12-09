@@ -39,11 +39,13 @@ public class TitleExampleSystem extends BaseComponentSystem {
     @In
     private LocalPlayer localPlayer;
 
+    // Where the title magic happens
     @In
     private Title title;
 
     @Override
     public void postBegin() {
+        // Schedule an action after 1 second from now
         delayManager.addDelayedAction(localPlayer.getCharacterEntity(), DELAY_ACTION_ID, 1000L);
     }
 
